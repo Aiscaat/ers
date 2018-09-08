@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap container"><a class="logo" href="/"><img class="logo__image" src="assets/img/logo.svg" alt="logotype">
+          <p class="logo__name">торговый комплекс<strong>евроремонт</strong></p></a>
+        <div class="header-nav"><a class="header-nav__link" href="/catalog.html">Каталог</a><a class="header-nav__link" href="">Торговые центры</a><a class="header-nav__link" href="">Компания</a><a class="header-nav__link" href="">Контакты</a><a class="header-nav__link" href="">Помощь</a>
+        </div>
+        <div class="phone-list">
+          <div class="phone">
+            <svg class="phone__icon">
+              <use xlink:href="assets/img/sprite.svg#phone-2"></use>
+            </svg>
+            <p>+7 (918) <span>210-30-30</span></p>
+          </div>
+          <div class="phone">
+            <svg class="phone__icon">
+              <use xlink:href="assets/img/sprite.svg#phone-1"></use>
+            </svg>
+            <p>+7 (861) <span>275-09-92</span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-head">
+      <div class="container">
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="">Главная</a><span class="breadcrumbs__item">Каталог</span>
+        </div>
+        <h2 class="page-title">Каталог</h2>
+      </div>
+    </div>
+    <main class="main">
+      <div class="catalog__wrap">
+        <div class="filter">
+          <div class="filter__head">
+            <div class="container">
+              <form class="filter-form">
+                <div class="filter-form__group" style="width: 186px"><span class="filter-form__option-name">Тип помещения</span>
+                  <input class="filter-form__input" readonly value="Торг. помещение">
+                  <div class="filter-form__select"><a class="filter-form__option" href="">Офис</a><a class="filter-form__option -active" href="">Торг. помещение</a><a class="filter-form__option" href="">Склад</a></div>
+                </div>
+                <div class="filter-form__group" style="width: 236px"><span class="filter-form__option-name">Цена</span>
+                  <div class="filter-form__box">
+                    <label class="filter-form__group"><span>от</span>
+                      <input class="filter-form__input" type="text" value="5 000" style="max-width: 78px">
+                    </label>
+                    <label class="filter-form__group"><span>до</span>
+                      <input class="filter-form__input" type="text" value="999 999" style="max-width: 78px">
+                    </label><span>₽</span>
+                  </div>
+                </div>
+                <div class="filter-form__group" style="width: 198px"><span class="filter-form__option-name">Площадь</span>
+                  <div class="filter-form__box">
+                    <label class="filter-form__group"><span>от</span>
+                      <input class="filter-form__input" type="text" value="10" style="max-width: 56px">
+                    </label>
+                    <label class="filter-form__group"><span>до</span>
+                      <input class="filter-form__input" type="text" value="1000" style="max-width: 56px">
+                    </label><span>м²</span>
+                  </div>
+                </div>
+                <div class="filter-form__group" style="width: 219px"><span class="filter-form__option-name">Торговый центр</span>
+                  <input class="filter-form__input" readonly value="Любой">
+                  <div class="filter-form__select"><a class="filter-form__option -active" href="">Любой</a><a class="filter-form__option" href="">ТЦ Дверей и напольных покрытий</a><a class="filter-form__option" href="">ТЦ Строительные материалы</a><a class="filter-form__option" href="">ТЦ Сантехника и обои</a><a class="filter-form__option" href="">ТЦ Кухни и кухонное оборудование</a><a class="filter-form__option" href="">ТЦ Дом</a></div>
+                </div>
+                <div class="filter-form__group" style="width: 80px"><span class="filter-form__option-name">Этаж</span>
+                  <input class="filter-form__input" readonly value="Любой">
+                  <div class="filter-form__select"><a class="filter-form__option -active" href="">Любой</a><a class="filter-form__option" href="">Цоколь</a><a class="filter-form__option" href="">1 этаж</a><a class="filter-form__option" href="">2 этаж</a><a class="filter-form__option" href="">3 этаж</a><a class="filter-form__option" href="">4 этаж</a></div>
+                </div>
+                <button class="filter-form__submit btn">Подобрать</button>
+              </form>
+            </div>
+          </div>
+          <div class="filter__foot">
+            <div class="filter__sort container"><a class="filter__sort-option" href="">Сортировать по цене</a>
+              <div class="filter__sort-option">
+                <label class="filter__sort-label" for="id">Скоро освобождаются</label>
+                <input class="filter__sort-check" type="checkbox" id="id" value="id">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__wrap container">
+          <div class="catalog__list">
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин Д-105</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>63 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Склад С-59</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>28 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин К-1245</td>
+                      <td>123 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>110 700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Офис С-306-307</td>
+                      <td>35 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>14 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин Д-105</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>63 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Склад С-59</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>28 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин К-1245</td>
+                      <td>123 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>110 700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Офис С-306-307</td>
+                      <td>35 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>14 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин Д-105</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>63 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Склад С-59</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>28 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин К-1245</td>
+                      <td>123 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>110 700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Офис С-306-307</td>
+                      <td>35 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>14 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин Д-105</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>63 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Склад С-59</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>28 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин К-1245</td>
+                      <td>123 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>110 700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Офис С-306-307</td>
+                      <td>35 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>14 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин Д-105</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>63 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Склад С-59</td>
+                      <td>70 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>28 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Магазин К-1245</td>
+                      <td>123 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>110 700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+            <div class="product">
+              <div class="product__img-box">
+                <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+              </div>
+              <div class="product__info">
+                <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                <table class="product__table">
+                  <tbody>
+                    <tr>
+                      <td>Офис С-306-307</td>
+                      <td>35 м²</td>
+                    </tr>
+                    <tr>
+                      <td>Цена за м²</td>
+                      <td>400 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Цена в мес.</td>
+                      <td>14 000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+            </div>
+          </div>
+          <button class="more-product btn">Показать еще</button>
+          <div class="pagination"><a href="">1</a><a href="">2</a><span class="-active">3</span><a href="">4</a><a href="">5</a>
+          </div>
+        </div>
+        <div class="catalog__desc">
+          <div class="container"><b class="catalog__desc-title">Блок SEO текста</b>
+            <p>
+              Инвестиции в коммерческую недвижимость по доходности намного опережают традиционные способы вложения частных сбережений, 
+              такие как банковские вклады и уж тем более — покупка инвестиционной квартиры. Если правильно выбрать объект, его доходность 
+              будет составлять 10–17% годовых. Тем не менее покупка здания или помещения, которое будет приносить доходы, 
+              а не убытки — задача не из лёгких.
+            </p>
+          </div>
+        </div>
+        <div class="not-found container">
+          <h3 class="not-found__text">По вашему запросу ничего не найдено.</h3>
+          <p>Попробуйте изменить парраметры поиска.</p>
+        </div>
+        <div class="slider">
+          <div class="container">
+            <h2 class="slider__title">Свободные помещения</h2>
+            <div class="slider__wrap">
+              <div class="slider__list-wrap">
+                <div class="slider__list">
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Магазин Д-105</td>
+                            <td>70 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>900 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>63 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Склад С-59</td>
+                            <td>70 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>400 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>28 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Магазин К-1245</td>
+                            <td>123 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>900 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>110 700 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Офис С-306-307</td>
+                            <td>35 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>400 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>14 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/><img class="product__img" src="assets/img/slider/1.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Магазин Д-105</td>
+                            <td>70 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>900 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>63 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product"><span class="lath">Свободен<br/>с 20.10.18</span>
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/><img class="product__img" src="assets/img/slider/2.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Склад С-59</td>
+                            <td>70 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>400 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>28 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/><img class="product__img" src="assets/img/slider/3.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Магазин К-1245</td>
+                            <td>123 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>900 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>110 700 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                  <div class="product">
+                    <div class="product__img-box">
+                      <div class="product__img-list"><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/><img class="product__img" src="assets/img/slider/4.jpg" alt=""/></div>
+                      <button class="product__img-control -prev"><span class="product__img-btn-icon"></span></button>
+                      <button class="product__img-control -next"><span class="product__img-btn-icon"></span></button>
+                    </div>
+                    <div class="product__info">
+                      <p class="product__name">ТЦ Дверей и напольных покрытий</p>
+                      <table class="product__table">
+                        <tbody>
+                          <tr>
+                            <td>Офис С-306-307</td>
+                            <td>35 м²</td>
+                          </tr>
+                          <tr>
+                            <td>Цена за м²</td>
+                            <td>400 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Цена в мес.</td>
+                            <td>14 000 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="product__btn-box"><a class="btn" href="/product-card.html">Подробнее</a></div>
+                  </div>
+                </div>
+              </div>
+              <button class="slider-btn -prev"></button>
+              <button class="slider-btn -next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__head">
+        <div class="container">
+          <div class="footer__info"><a class="logo" href="/"><img class="logo__image" src="assets/img/logo.svg" alt="logotype">
+              <p class="logo__name">торговый комплекс<strong>евроремонт</strong></p></a>
+            <p class="address">г. Краснодар, ул. Фрунзе,<br>д. 188/1, 4й этаж</p>
+            <div class="phone-list">
+              <div class="phone">
+                <svg class="phone__icon">
+                  <use xlink:href="assets/img/sprite.svg#phone-2"></use>
+                </svg>
+                <p>+7 (918) <span>210-30-30</span></p>
+              </div>
+              <div class="phone">
+                <svg class="phone__icon">
+                  <use xlink:href="assets/img/sprite.svg#phone-1"></use>
+                </svg>
+                <p>+7 (861) <span>275-09-92</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">Торговые помещения</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">Офисы</a><a class="footer-menu__link" href="">Торговые помещения</a><a class="footer-menu__link" href="">Склады</a>
+              </div>
+            </div>
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">О нас</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">О компании</a><a class="footer-menu__link" href="">Контакты</a><a class="footer-menu__link" href="">Карта</a><a class="footer-menu__link" href="">Помощь</a>
+              </div>
+            </div>
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">Торговые центры</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">ТЦ Дверей и напольных покрытий </a><a class="footer-menu__link" href="">ТЦ Строительные материалы</a><a class="footer-menu__link" href="">ТЦ Сантехника и обои</a><a class="footer-menu__link" href="">ТЦ Кухни и кухонное оборудование</a><a class="footer-menu__link" href="">ТЦ Дом</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__foot">
+        <div class="container">
+          <p class="copyright">© 2009-2018 <b>Евроремонт</b></p><a class="agreement" href="">Соглашение об обработке персональных данных</a>
+          <div class="developer"><span>Разработка<br>и продвижение</span><a class="developer__link" href="http://blaze.su/" target="_blank">
+              <svg class="developer__logo">
+                <use xlink:href="assets/img/sprite.svg#Blaze"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

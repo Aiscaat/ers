@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/app.js"></script>
+    <script id="map-script" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap container"><a class="logo" href="/"><img class="logo__image" src="assets/img/logo.svg" alt="logotype">
+          <p class="logo__name">торговый комплекс<strong>евроремонт</strong></p></a>
+        <div class="header-nav"><a class="header-nav__link" href="/catalog.html">Каталог</a><a class="header-nav__link" href="">Торговые центры</a><a class="header-nav__link" href="">Компания</a><a class="header-nav__link" href="">Контакты</a><a class="header-nav__link" href="">Помощь</a>
+        </div>
+        <div class="phone-list">
+          <div class="phone">
+            <svg class="phone__icon">
+              <use xlink:href="assets/img/sprite.svg#phone-2"></use>
+            </svg>
+            <p>+7 (918) <span>210-30-30</span></p>
+          </div>
+          <div class="phone">
+            <svg class="phone__icon">
+              <use xlink:href="assets/img/sprite.svg#phone-1"></use>
+            </svg>
+            <p>+7 (861) <span>275-09-92</span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-head">
+      <div class="container">
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="">Главная</a><span class="breadcrumbs__item">Контакты </span>
+        </div>
+        <h2 class="page-title">Контакты </h2>
+      </div>
+    </div>
+    <main class="main">
+      <div class="contacts">
+        <div class="contacts-center contacts__wrap">
+          <div class="container">
+            <h3 class="contacts__title">ТК ЕВРОРЕМОНТ</h3>
+            <div class="contacts-center__info">
+              <div class="contacts-center__info-col">
+                <p>г. Краснодар, ул. Фрунзе, д. 188/1,<br>4й этаж, Администрация комплекса</p>
+              </div>
+              <div class="contacts-center__info-col">
+                <p>Понедельник - Пятница<br>Время работы с 9:00 до 18:00</p>
+              </div>
+              <div class="contacts-center__info-col">
+                <table class="contacts-table">
+                  <tbody>
+                    <tr>
+                      <td><span class="phone-text">Телефон</span></td>
+                      <td>
+                        <p class="phone">+7 (918) <span>210-30-30</span></p>
+                        <p class="phone">+7 (861) <span>275-09-92</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span>E-mail</span></td>
+                      <td><span>info@evroremont-tk.ru</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location contacts__wrap">
+          <div class="container">
+            <h3 class="contacts__title">Торговых центров</h3>
+            <ul class="location__list">
+              <li class="location__item">
+                <p class="location__item-name">ТЦ Дверей и напольных покрытий</p>
+                <p class="location__item-address">г. Краснодар, ул. Фрунзе, д. 188/1</p>
+              </li>
+              <li class="location__item">
+                <p class="location__item-name">ТЦ Строительные материалы</p>
+                <p class="location__item-address">г. Краснодар ул. Калинина, д. 327</p>
+              </li>
+              <li class="location__item">
+                <p class="location__item-name">ТЦ Сантехника и обои</p>
+                <p class="location__item-address">г. Краснодар, ул. Северная, д. 320</p>
+              </li>
+              <li class="location__item">
+                <p class="location__item-name">ТЦ Дом</p>
+                <p class="location__item-address">г. Краснодар, ул. Северная, д. 312</p>
+              </li>
+              <li class="location__item">
+                <p class="location__item-name">ТЦ Кухни и кухонное оборудование</p>
+                <p class="location__item-address">г. Краснодар, ул. Фрунзе, д. 186/1</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="map"></div>
+        <script type="text/javascript">
+          ymaps.ready(init);
+          
+          function init(){
+             var myMap = new ymaps.Map("map", {
+                center: [45.039372, 38.964712],
+                zoom: 16
+             });
+          
+             myMap.behaviors.disable('scrollZoom');
+          
+             var marks = [
+                {
+                   coords: [45.041152, 38.967480],
+                   options: {
+                      hintContent: 'ТЦ Дверей и напольных покрытий',
+                      balloonContent: 'ТЦ Дверей и напольных покрытий <br /> г. Краснодар, ул. Фрунзе, д. 188/1'
+                   }
+                },
+                {
+                   coords: [45.038712, 38.966662],
+                   options: {
+                      hintContent: 'ТЦ Строительные материалы',
+                      balloonContent: 'ТЦ Строительные материалы <br /> г. Краснодар ул. Калинина, д. 327'
+                   }
+                },
+                {
+                   coords: [45.040744, 38.968621],
+                   options: {
+                      hintContent: 'ТЦ Сантехника и обои',
+                      balloonContent: 'ТЦ Сантехника и обои <br /> г. Краснодар, ул. Северная, д. 320'
+                   }
+                },
+                {
+                   coords: [45.041145, 38.966258],
+                   options: {
+                      hintContent: 'ТЦ Дом',
+                      balloonContent: 'ТЦ Дом <br /> г. Краснодар, ул. Северная, д. 312'
+                   }
+                },
+                {
+                   coords: [45.040222, 38.967075],
+                   options: {
+                      hintContent: 'ТЦ Кухни и кухонное оборудование',
+                      balloonContent: 'ТЦ Кухни и кухонное оборудование <br /> г. Краснодар, ул. Фрунзе, д. 186/1'
+                   }
+                },
+             ];
+          
+             for(var i = 0; i < marks.length; i++) {
+                myMap.geoObjects.add(new ymaps.Placemark(marks[i].coords, marks[i].options));
+             }
+          }
+        </script>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__head">
+        <div class="container">
+          <div class="footer__info"><a class="logo" href="/"><img class="logo__image" src="assets/img/logo.svg" alt="logotype">
+              <p class="logo__name">торговый комплекс<strong>евроремонт</strong></p></a>
+            <p class="address">г. Краснодар, ул. Фрунзе,<br>д. 188/1, 4й этаж</p>
+            <div class="phone-list">
+              <div class="phone">
+                <svg class="phone__icon">
+                  <use xlink:href="assets/img/sprite.svg#phone-2"></use>
+                </svg>
+                <p>+7 (918) <span>210-30-30</span></p>
+              </div>
+              <div class="phone">
+                <svg class="phone__icon">
+                  <use xlink:href="assets/img/sprite.svg#phone-1"></use>
+                </svg>
+                <p>+7 (861) <span>275-09-92</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">Торговые помещения</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">Офисы</a><a class="footer-menu__link" href="">Торговые помещения</a><a class="footer-menu__link" href="">Склады</a>
+              </div>
+            </div>
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">О нас</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">О компании</a><a class="footer-menu__link" href="">Контакты</a><a class="footer-menu__link" href="">Карта</a><a class="footer-menu__link" href="">Помощь</a>
+              </div>
+            </div>
+            <div class="footer-menu__item">
+              <p class="footer-menu__title">Торговые центры</p>
+              <div class="footer-menu__wrap"><a class="footer-menu__link" href="">ТЦ Дверей и напольных покрытий </a><a class="footer-menu__link" href="">ТЦ Строительные материалы</a><a class="footer-menu__link" href="">ТЦ Сантехника и обои</a><a class="footer-menu__link" href="">ТЦ Кухни и кухонное оборудование</a><a class="footer-menu__link" href="">ТЦ Дом</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__foot">
+        <div class="container">
+          <p class="copyright">© 2009-2018 <b>Евроремонт</b></p><a class="agreement" href="">Соглашение об обработке персональных данных</a>
+          <div class="developer"><span>Разработка<br>и продвижение</span><a class="developer__link" href="http://blaze.su/" target="_blank">
+              <svg class="developer__logo">
+                <use xlink:href="assets/img/sprite.svg#Blaze"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
